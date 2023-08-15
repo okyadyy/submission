@@ -25,7 +25,7 @@ class HistoryFactory extends Factory
                 ->user_id,
             'status_id' => fn (array $attributes) => Submission::find($attributes['submission_id'])
                 ->status_id,
-            'comments' => fake()->word(),
+            'comments' => fake()->text,
         ];
     }
 }
